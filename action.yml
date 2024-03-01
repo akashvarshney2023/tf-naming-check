@@ -10,6 +10,6 @@ runs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Run script
-      run: python ./main.py
+      run: python main.py
       working-directory: .
       shell: bash
