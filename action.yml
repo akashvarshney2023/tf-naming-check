@@ -1,0 +1,13 @@
+name: 'My Custom Action'
+description: 'A simple custom GitHub Action'
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Run script
+      run: python ./action/main.py
