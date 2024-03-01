@@ -11,4 +11,5 @@ runs:
       uses: actions/checkout@v2
     - name: Run script
       run: python ./main.py
+      working-directory: .
       shell: bash
