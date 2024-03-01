@@ -10,5 +10,5 @@ runs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Run script
-      run: ./src/main.py
-      shell: python
+      run: python ./action/main.py
+      shell: bash
